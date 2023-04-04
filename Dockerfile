@@ -10,7 +10,7 @@ LABEL maintainer="NGINX Docker Maintainers <docker-maint@nginx.com>"
 ENV NGINX_VERSION 1.23.2
 ENV NJS_VERSION   0.7.7
 ENV PKG_RELEASE   1
-
+ARG var_name
 RUN set -x \
 # create nginx user/group first, to be consistent throughout docker variants
     && addgroup -g 101 -S nginx \
