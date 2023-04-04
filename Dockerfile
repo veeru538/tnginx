@@ -129,7 +129,7 @@ RUN chmod +x /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
 EXPOSE 80
-
+EXPOSE 81
 STOPSIGNAL SIGQUIT
 
 CMD ["nginx", "-g", "daemon off;"]
